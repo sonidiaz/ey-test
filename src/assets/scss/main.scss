@@ -1,0 +1,348 @@
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+    @import './bulma.scss';
+    $primaryColor: #1A2854;
+    $secundaryColor: #E7AC40;
+    $tercerColor: #b3b3b3;
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background: #F4F4F4;
+        color: #b3b3b3;
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 41px;
+        color: $primaryColor;
+    }
+    
+    h3 {
+        font-size: 18px;
+        color: $tercerColor;
+    }
+    
+    h4 {
+        font-size: 26px;
+        color: $primaryColor;
+    }
+    
+    a {
+        color: white;
+        &:hover {
+            color: $secundaryColor;
+        }
+    }
+    
+    .is-fluid-topbar {
+        max-width: 1190px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        background: white;
+    }
+    
+    .navbar {
+        .navbar-brand {
+            position: relative;
+            @media (min-width: 1088px) {
+                display: none;
+            }
+            img {
+                width: 63%;
+                max-height: 100%;
+            }
+        }
+        .navbar-menu {
+            @media (min-width: 1088px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    
+    .topBar {
+        color: white;
+        background: $primaryColor;
+        .column {
+            height: auto;
+            padding-bottom: 0;
+        }
+        @media (min-height: 992px) {}
+    }
+    
+    .menuTopbar {
+        height: auto;
+        @media (min-height: 992px) {
+            border-top: 2px solid $secundaryColor;
+        }
+        .navbar-menu {
+            background: $primaryColor;
+        }
+        .navbar-start {
+            width: 100%;
+            margin-right: 0;
+        }
+        .navbar-end {
+            width: 17%;
+        }
+        .navbar-item {
+            width: 24%;
+            padding-left: 30px;
+            &.item-area-personal {
+                width: 27%;
+                padding-left: 12px;
+                padding-right: 1px;
+            }
+        }
+        .navbar {
+            background: transparent;
+        }
+        .navbar-item,
+        .navbar-link {
+            color: white;
+        }
+        .level {
+            height: 48px !important;
+        }
+    }
+    
+    .witget-lang {
+        .navbar {
+            background: transparent;
+        }
+        .navbar-link {
+            color: white;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+    
+    .call-top-bar {
+        position: relative;
+        padding: 24px;
+        .is-1 {
+            width: 6%;
+        }
+        .is-2 {
+            text-align: center;
+        }
+    }
+    
+    .fas-ey {
+        position: absolute;
+        display: block;
+        width: 28px;
+        height: 28px;
+        left: -3px;
+        top: 15px;
+        background-size: cover;
+    }
+    
+    .brand-site {
+        .cont-logo {
+            position: relative;
+            width: 60%;
+            max-width: 94px;
+            margin: 30px auto;
+        }
+    }
+    
+    .sociales-head {
+        position: absolute;
+        display: none;
+        width: 159px;
+        height: 28px;
+        background: url(./images/iconos-social.png);
+        top: 33px;
+        right: 48px;
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+    
+    .brand-site {
+        display: none;
+        @media (min-width: 1088px) {
+            display: block;
+        }
+    }
+    
+    .nav-ey {
+        .navbar-burger {
+            margin-top: 10px;
+        }
+    }
+    
+    .navbar-dropdown {
+        background: $primaryColor;
+        .navbar-item {
+            &:hover {
+                color: $tercerColor !important;
+            }
+        }
+    }
+    
+    .primaryMenu {
+        .navbar-start {
+            width: 100%;
+            justify-content: center;
+            border-top: 1px solid $tercerColor;
+        }
+        .navbar-item {
+            font-size: 14px;
+            font-weight: 600;
+            color: $tercerColor;
+            text-transform: uppercase;
+            @media (min-width: 1088px) {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 20px;
+                    right: 0;
+                    background: $tercerColor;
+                }
+                &:last-child {
+                    &::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .hero {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .title-ey {
+        text-align: center;
+        hgroup {
+            position: relative;
+            width: 80%;
+            max-width: 606px;
+            margin: 0 auto;
+        }
+        h3 {
+            padding-top: 14px;
+            border-top: 1px solid $tercerColor;
+        }
+    }
+    
+    .posts-centros {
+        img {
+            display: block;
+            width: 100%;
+        }
+        span {
+            font-size: 14px;
+            color: $tercerColor;
+        }
+        .post {
+            .post-textos {
+                padding: 4px 15px;
+                box-shadow: 0px 2px 7px -1px #b5b5b5;
+                background: white;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        .cont-img-posts {
+            position: relative;
+            // margin: -0.75rem;
+        }
+    }
+    
+    .arrow-btn-post {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(./images/arrow.png) no-repeat center 16px;
+    }
+    
+    .tramites {
+        position: relative;
+        margin-bottom: 50px;
+    }
+    
+    .posts-tramites {
+        h4 {
+            font-size: 24px;
+        }
+        span {
+            color: white;
+        }
+        .column {
+            position: relative;
+            @media (min-width: 768px) {
+                padding: 0;
+                margin: 0.2rem;
+            }
+        }
+        .cont-img-posts {
+            position: relative;
+            background-size: cover;
+            height: 243px;
+        }
+        .post-textos {
+            @media (min-width: 768px) {
+                position: absolute;
+            }
+            width: 100%;
+            bottom: 0px;
+            background: rgba(235,
+            172,
+            58,
+            0.8);
+            padding: 12px;
+        }
+    }
+    
+    .cont-footer {
+        background: $primaryColor;
+        color: white;
+        .footer {
+            background: $primaryColor;
+            padding: 3rem 1.5rem 1rem;
+        }
+        .cont-item-footer {
+            position: relative;
+            &.top {
+                border-bottom: 1px solid white;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .ey-footer {
+            background: transparent;
+        }
+        .navbar-start {
+            position: relative;
+            display: block;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+        }
+        .navbar-item {
+            color: white;
+            @media (min-width: 768px) {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 20px;
+                    right: 0;
+                    background: $tercerColor;
+                }
+                &:last-child {
+                    &::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
